@@ -13,7 +13,7 @@ jobs:
         with:
           repository: FChikh/sync_repo_public
           ref: main
-          token: ${{ secrets.PUBLIC_REPO_TOKEN }}
+#           token: ${{ secrets.PUBLIC_REPO_TOKEN }}
 
       - name: Checkout Private Repo
         uses: actions/checkout@v2
