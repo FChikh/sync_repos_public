@@ -20,7 +20,7 @@ jobs:
         with:
           repository: FChikh/sync_repo_private
           ref: main
-          token: ${{ secrets.PRIVATE_REPO_TOKEN }}
+#           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
 
       - name: Sync Public Pull Requests to Private
         run: |
