@@ -1,0 +1,27 @@
+name: CI
+
+on: 
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake libgtest-dev
+    - name: Build and run tests
+      run: |
+        cd bigInteger
+        mkdir build
+        cd build
+        cmake ..
+        make
+        ctest
