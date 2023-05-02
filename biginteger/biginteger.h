@@ -9,7 +9,7 @@ class BigInteger
     
 private:
     std::vector<uint16_t> number;
-    bool sign = 0;
+    bool sign = 1;
 
     void flatten(std::vector<uint16_t> &x)
     {
