@@ -6,6 +6,7 @@ bool operator>(std::vector<uint16_t> a, std::vector<uint16_t> b);
 
 class BigInteger
 {
+    
 private:
     std::vector<uint16_t> number;
     bool sign = 1;
