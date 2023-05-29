@@ -8,7 +8,7 @@ class BigInteger
 {
     
 private:
-    std::vector<uint16_t> number;
+    std::vector<uint32_t> number;
     bool sign = 1;
 
     void flatten(std::vector<uint16_t> &x)
